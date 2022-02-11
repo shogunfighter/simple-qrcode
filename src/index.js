@@ -17,6 +17,7 @@ let inp, el1, el2, el3;
 let initInterface = () => {
 	inp = document.getElementById("inputData");
 	
+	inp.addEventListener("input", updateQrImage);
 	inp.addEventListener("change", updateQrImage);
 	
 	el1 = document.getElementById("qrcode1");
